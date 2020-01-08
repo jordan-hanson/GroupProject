@@ -5,55 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/combine/npm/bulma@0.8.0/css/bulma.css,npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>
         My Coffee Finder
     </title>
 </head>
 
 <body>
-    <div id="main" class="container"></div>
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
+        <div class="nav-wrapper brown lighten-1">
+            <a href="#" class="brand-logo">My Coffee Finder</a>
             </ul>
         </div>
     </nav>
 
+    <div id="main" class="container-1">
+        <div class="row" class="flex-box-container-1" class="flow-text">
+            <div id="coffeeColumn" class="col s5" class="flow-text">
+                <div class="mini-container-1">
+                    <div class="row" id="titleRow">
+                        <h6>
+                            Search for your Coffee !!
+                        </h6>
+                    </div>
+                </div>
+                <div class="mini-container-2">
+                    <div class="row">
+                        <div>
+                            <input id="enterNameField" type="text" name="entryname" placeholder="Enter Zipcode">
+                            <button type="submit" class="waves-effect waves-light btn-small" id="searchButton"
+                                class="searchButton()">Search</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s9">
+                            <h6>
+                                Title
+                            </h6>
+                            <li> Identifier
+                            </li>
+                            <li>
+                                Mileage API
+                            </li>
+                            <li>
+                                Store Hours
+                            </li>
+                        </div>
+                        <div class="col s3">
+                            Image
+                        </div>
+                        <div class="col s9">
+                            <h6>
+                                Title
+                            </h6>
+                            <li> Identifier
+                            </li>
+                            <li>
+                                Mileage API
+                            </li>
+                            <li>
+                                Store Hours
+                            </li>
+                        </div>
+                        <div class="col s3">
+                            Image
+                        </div>
+                        <div class="col s9">
+                            <h6>
+                                Title
+                            </h6>
+                            <li> Identifier
+                            </li>
+                            <li>
+                                Mileage API
+                            </li>
+                            <li>
+                                Store Hours
+                            </li>
+                        </div>
+                        <div class="col s3">
+                            Image
+                        </div>
+                        <div class="col s9">
+                            <h6>
+                                Title
+                            </h6>
+                            <li> Identifier
+                            </li>
+                            <li>
+                                Mileage API
+                            </li>
+                            <li>
+                                Store Hours
+                            </li>
+                        </div>
+                        <div class="col s3">
+                            Image
+                        </div>
+                        <div class="col s9">
+                            <h6>
+                                Title
+                            </h6>
+                            <li> Identifier
+                            </li>
+                            <li>
+                                Mileage API
+                            </li>
+                            <li>
+                                Store Hours
+                            </li>
+                        </div>
+                        <div class="col s3">
+                            Image
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapColumn" class="col s7" class="flow-flex">
+                this is the map
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="javascript/script.js"></script>
 
 
 </body>
 
 <script>
-    var options = {
-        enableHighAccuracy: true,
+    //var options = {
+    enableHighAccuracy: true,
         timeout: 5000,
-        maximumAge: 0
-    };
+            maximumAge: 0
+    //};
 
-    function success(pos) {
-        var crd = pos.coords;
+    //function success(pos) {
+    var crd = pos.coords;
 
-        console.log('Your current position is:');
-        console.log(`Latitude : ${crd.latitude}`);
-        console.log(`Longitude: ${crd.longitude}`);
-        console.log(`More or less ${crd.accuracy} meters.`);
-    }
+    console.log('Your current position is:');
+    console.log(`Latitude : ${crd.latitude}`);
+    console.log(`Longitude: ${crd.longitude}`);
+    console.log(`More or less ${crd.accuracy} meters.`);
+    //}
 
-    function error(err) {
-        console.warn(`ERROR(${err.code}): ${err.message}`);
-    }
+    //function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+    //}
 
-    navigator.geolocation.getCurrentPosition(success, error, options);
+    //navigator.geolocation.getCurrentPosition(success, error, options);
 </script>
 
 </html>
