@@ -16,7 +16,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <nav>
         <div class="nav-wrapper brown lighten-1">
             <a href="#" class="brand-logo">My Coffee Finder</a>
@@ -35,7 +34,7 @@
                     </div>
                 </div>
                 <div class="mini-container-2">
-                    <div class="row">
+                    <div class="row" class="form">
                         <div>
                             <input id="enterNameField" type="text" name="entryname" placeholder="Enter Zipcode">
                             <button type="submit" class="waves-effect waves-light btn-small" id="searchButton"
@@ -132,40 +131,29 @@
         </div>
     </div>
     </div>
-=======
-
-
-    <div class="submit"></div>
-
-
-
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
->>>>>>> 3555fe5aa32b5e4de5e6ff0d48dc400e23680fb1
     <script src="javascript/script.js"></script>
 
 
 </body>
 <script>
-    //var options = {
-    enableHighAccuracy: true,
+    var options = {
+        enableHighAccuracy: true,
         timeout: 5000,
-            maximumAge: 0
-    //};
+        maximumAge: 0
+    };
 
-    //function success(pos) {
-    var crd = pos.coords;
+    function success(pos) {
+        var crd = pos.coords;
 
-    console.log('Your current position is:');
-    console.log(`Latitude : ${crd.latitude}`);
-    console.log(`Longitude: ${crd.longitude}`);
-    console.log(`More or less ${crd.accuracy} meters.`);
-    //}
+        console.log('Your current position is:');
+        console.log(`Latitude : ${crd.latitude}`);
+        console.log(`Longitude: ${crd.longitude}`);
+        console.log(`More or less ${crd.accuracy} meters.`);
+    }
 
-    //function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-    //}
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
 
     //navigator.geolocation.getCurrentPosition(success, error, options);
 </script>
