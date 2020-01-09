@@ -8,16 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>
         My Coffee Finder
     </title>
+    <!-- <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" /> -->
 </head>
 
 <body>
-    <script src="javascript/script.js"></script>
-</body>
+    <nav>
+        <div class="nav-wrapper brown lighten-1 flow-text">
+            <a href="#" class="flow-text">My Coffee Finder</a>
 
+        </div>
+    </nav>
+
+    <div id="main" class="container-1">
+        <div class="row" class="flex-box-container-1" class="flow-text">
+            <div id="coffeeColumn" class="col s12 m4" class="flow-text">
+                <div class="mini-container-1">
+                    <div class="row" id="titleRow">
+                        <h6>
+                            Search for your Coffee !!
+                        </h6>
+                    </div>
+                </div>
+                <div class="mini-container-2">
+                    <li class="search" style="list-style: none;">
+                        <div class="search-wrapper">
+
+                            <input id="search" placeholder="Search Zipcode">
+                            <i class="material-icons"></i>
+                            <div class="search-results"></div>
+
+                        </div>
+                    </li>
+                    <div class="row" id="coffee-shops-homes">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="mapColumn" class="col s12 m8" class="flow-flex">
+                <p style="text-align: center;">this is the map</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="submit"></div>
+
+
+
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+
+    <!-- >>>>>>> 3555fe5aa32b5e4de5e6ff0d48dc400e23680fb1 -->
+    <script src="javascript/script.js"></script>
+
+
+</body>
 <script>
     var options = {
         enableHighAccuracy: true,

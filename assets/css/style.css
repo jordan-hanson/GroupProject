@@ -1,0 +1,62 @@
+.container-1 {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+/* .flex-box-container-1 {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+} */
+/* .titleRow {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0px;
+    align-items: center;
+} */
+/* #searchButton {
+    float: right;
+} */
+/* .mini-container-1 {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0px;
+    align-items: center;
+    
+} */
+/* .mini-container-2 {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+} */
+/* .flex-box-container-1 div {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+} */
+/* .flex-box-container p {
+    border: 1px solid black;
+    align-items: center;
+} */
+/* #coffeeColumn {
+    border: 1px solid black;
+    font-size: small;
+} */
+/* #mapColumn {
+        font-size: small;
+        border: 1px solid black;
+        margin: 0 auto;
+        padding: 10px;
+        align-items: center;
+        
+    } */
