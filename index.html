@@ -11,21 +11,20 @@
     <title>
         My Coffee Finder
     </title>
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" /> -->
 </head>
 
 <body>
     <nav>
-        <div class="nav-wrapper brown lighten-1">
-            <a href="#" class="brand-logo">My Coffee Finder</a>
-            </ul>
+        <div class="nav-wrapper brown lighten-1 flow-text">
+            <a href="#" class="flow-text">My Coffee Finder</a>
+
         </div>
     </nav>
 
     <div id="main" class="container-1">
         <div class="row" class="flex-box-container-1" class="flow-text">
-            <div id="coffeeColumn" class="col s5" class="flow-text">
+            <div id="coffeeColumn" class="col s12 m4" class="flow-text">
                 <div class="mini-container-1">
                     <div class="row" id="titleRow">
                         <h6>
@@ -51,9 +50,9 @@
                             <li>
                                 Mileage API
                             </li>
-                            <li>
+                            <lgiti>
                                 Store Hours
-                            </li>
+                            </lgiti>
                         </div>
                         <div class="col s3">
                             Image
@@ -121,17 +120,32 @@
                         </div>
                         <div class="col s3">
                             Image
+                        </div>
+                        </li>
+                        <div class="row" id="coffee-shops-homes">
+
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mapColumn" class="col s7" class="flow-flex">
-                this is the map
+                <div class="mapColumn" class="col s12 m8" class="flow-flex">
+                    <p style="text-align: center;">this is the map</p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <script src="javascript/script.js"></script>
+    <<<<<<< HEAD=======<div class="submit">
+        </div>
+
+
+
+        <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+
+        <!-- >>>>>>> 3555fe5aa32b5e4de5e6ff0d48dc400e23680fb1 -->
+        <!-- >>>>>>> f52e7c98c3b8c38a46237c73b8adb7df179e1fd4 -->
+        <script src="javascript/script.js"></script>
 
 
 </body>
@@ -155,7 +169,7 @@
         console.warn(`ERROR(${err.code}): ${err.message}`);
     }
 
-    //navigator.geolocation.getCurrentPosition(success, error, options);
+    navigator.geolocation.getCurrentPosition(success, error, options);
 </script>
 
 </html>
