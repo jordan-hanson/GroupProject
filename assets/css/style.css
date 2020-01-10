@@ -32,19 +32,23 @@ body {
     justify-content: space-around;
 
 } 
- .titleRow {
+ /*.titleRow {
     border: 1px solid black;
     margin: 0 auto;
     padding: 0px;
     align-items: center;
     text-align: center;
-} 
+} */
 
  #searchButton {
     float: right;
 } 
 .card-items {
     padding: 5px
+    !important
+}
+.row {
+    margin-bottom: 0px
     !important
 }
 /*.theMap {
