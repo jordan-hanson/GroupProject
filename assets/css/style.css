@@ -88,12 +88,12 @@ body {
 #theMap {
     border: 1px solid black;
 
-}
-/* .mapColumn {
+}*/
+.mapColumn {
         font-size: small;
         border: 1px solid black;
         margin: 0 auto;
         padding: 10px;
         align-items: center;
         
-    }*/
+    }

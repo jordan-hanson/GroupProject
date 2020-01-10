@@ -46,7 +46,7 @@ const getCoffeeShops = () => {
             console.log(dataEl)
             for (var i = 0; i < dataEl.candidates.length; i++) {
                 console.log(dataEl.candidates[i].address);
-                var coffeeShopCard = $("<div>").addClass("col s12 m12");
+                var coffeeShopCard = $("<div>").addClass("col s12 m12").attr("id", "card-button");
                 var cardTitle = $("<h5>").addClass("header").text(dataEl.candidates[i].address);
                 var horizontalCard = $("<div>").addClass("card horizontal");
                 var cardImg = $("<div>").addClass("card-image");
