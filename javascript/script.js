@@ -84,7 +84,7 @@ const getCoffeeShops = () => {
 
             $("#card-button").click(function () {
                 // $("#map").empty()
-                console.log(lon, lat)
+                // console.log(lon, lat)
                 L.mapquest.key = 'QR7nQvmiQcuP7wcQSNDMp8gjLvJsXBcr';
 
                 var map = L.mapquest.map('map', {
