@@ -47,28 +47,28 @@ const getCoffeeShops = () => {
             for (var i = 0; i < dataEl.candidates.length; i++) {
                 console.log(dataEl.candidates[i].address);
                 var coffeeShopCard = $("<div>").addClass("col s12 m12");
-                var cardTitle = $("<h3>").addClass("header").text(dataEl.candidates[i].address);
+                var cardTitle = $("<h5>").addClass("header").text(dataEl.candidates[i].address);
                 var horizontalCard = $("<div>").addClass("card horizontal");
                 var cardImg = $("<div>").addClass("card-image");
                 var Img = $('<img />', {
                     id: "image-" + [i],
-                    src: 'https://lorempixel.com/100/190/nature/6',
+                    src: 'https://media.giphy.com/media/7qV3yswT0K8hi/giphy.gif',
                     alt: 'placeholder'
                 });
                 var cardStack = $("<div>").addClass("card-stack");
-                var cardContent = $("<div>").addClass("card-content")
+                var cardContent = $("<div>").addClass("card-content card-items")
                 // var cardButton = $("<a />").addClass("waves-effect waves-light btn").text("button")
-                var cardIdentifier = $("<li>").text("Coffee Shop");
-                var cardStoreHours = $("<li>").text("6am : 9pm");
+                var cardIdentifier = $("<h6>").text("Coffee Shop");
+                var cardStoreHours = $("<h6>").text("Store Hours: 6am to 9pm");
 
-                $(coffeeShopCard).append(cardTitle);
                 $(coffeeShopCard).append(horizontalCard);
-                $(horizontalCard).append(cardStack);
+                $(horizontalCard).append(cardTitle);
+                $(cardTitle).append(cardStack);
                 $(cardStack).append(cardContent);
                 $(cardContent).append(cardIdentifier);
-                $(cardContent).append(cardStoreHours);
                 $(horizontalCard).append(cardImg);
                 $(cardImg).append(Img);
+                $(cardContent).append(cardStoreHours);
                 $("#coffee-shops-homes").append(coffeeShopCard);
 
 
