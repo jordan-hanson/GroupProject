@@ -65,7 +65,7 @@ getCoffeeShops = () => {
                 buildCoffeeShopCard();
             }
             // ----finding the reverse address from the lattitude and longitude
-            var reverseURL = "http://www.mapquestapi.com/geocoding/v1/reverse?key=Sf1vVXP4tsAXRiAvYumsYGJTgGd0wlMe&location=" + lat + "," + lon + "&includeRoadMetadata=true&includeNearestIntersection=true"
+            var reverseURL = "https://www.mapquestapi.com/geocoding/v1/reverse?key=Sf1vVXP4tsAXRiAvYumsYGJTgGd0wlMe&location=" + lat + "," + lon + "&includeRoadMetadata=true&includeNearestIntersection=true"
             // ----finding the reverse address of of the lattitude and longitude
             $.ajax({
                 url: reverseURL,
