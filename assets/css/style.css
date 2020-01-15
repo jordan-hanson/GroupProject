@@ -30,7 +30,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
 } 
  /*.titleRow {
     border: 1px solid black;
@@ -39,9 +38,9 @@ body {
     align-items: center;
     text-align: center;
 } */
-
  #searchButton {
     float: right;
+    height: 47px;
 } 
 .card-items {
     padding: 5px
@@ -62,7 +61,6 @@ body {
     margin: 0 auto;
     padding: 0px;
     align-items: center;
-    
 } */
 /* .mini-container-2 {
     border: 1px solid black;
@@ -87,13 +85,15 @@ body {
 }
 #theMap {
     border: 1px solid black;
-
-}*/
-.mapColumn {
+}
+/* .mapColumn {
         font-size: small;
         border: 1px solid black;
         margin: 0 auto;
         padding: 10px;
         align-items: center;
-        
-    }
+    }*/
+.search-wrapper {
+    display: flex;
+
+}
